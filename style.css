@@ -1105,3 +1105,16 @@ body {
     padding-bottom: 12px;
   }
 }
+
+/* FIX: Mobile button cut-off issue (question page only) */
+@media (max-height: 700px) {
+  #question-page.page {
+    justify-content: flex-start;
+    padding-top: 24px;
+    padding-bottom: 90px; /* space for footer */
+  }
+
+  #question-page .buttons-container {
+    margin-bottom: 24px;
+  }
+}
